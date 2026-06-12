@@ -1,0 +1,9 @@
+[
+  {"timestamp": 1718000000, "severity": "info", "action": "login", "user": "alice", "src_ip": "10.0.1.5", "message": "User login success", "success": true},
+  {"timestamp": 1718000060, "severity": "info", "action": "login", "user": "bob", "src_ip": "10.0.1.8", "message": "User login success", "success": true},
+  {"timestamp": 1718000120, "severity": "low", "action": "scan", "user": "guest", "src_ip": "203.0.113.44", "message": "Port scan detected on 22/tcp", "mitre_id": "T1046"},
+  {"timestamp": 1718000125, "severity": "medium", "action": "fail", "user": "admin", "src_ip": "203.0.113.44", "message": "SSH brute force attempt blocked", "success": false, "interval_ms": 5000},
+  {"timestamp": 1718000130, "severity": "high", "action": "exploit", "user": "admin", "src_ip": "203.0.113.44", "message": "Possible CVE-2024-XXXX exploit attempt", "mitre_id": "T1190", "success": false, "interval_ms": 50},
+  {"timestamp": 1718000132, "severity": "critical", "action": "alert", "user": "SYSTEM", "src_ip": "203.0.113.44", "message": "Reverse shell outbound connection", "mitre_id": "T1059", "success": false, "interval_ms": 20},
+  {"timestamp": 1718000200, "severity": "info", "action": "update", "user": "svc_patch", "src_ip": "10.0.2.1", "message": "Scheduled patch applied", "success": true}
+]
